@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<style>
+    .responsive-form {
+        max-width: 830px;
+        width: 100%;
+        border-radius: 4px;
+        border: 2px solid #04AA6D;
+        background-color: #8ef8ef;
+        padding: 20px;
+        margin-left: 25%;
+        margin: 20px auto;
+
+    }
+
+
+    input[type=submit] {
+        width: 30%;
+        background-color: #04AA6D;
+        color: white;
+        padding: 14px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-left: 20%;
+
+    }
+
+    input[type=reset] {
+        width: 30%;
+        background-color: #04AA6D;
+        color: white;
+        padding: 14px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+</style>
+
+<body>
+
+    <h1 align="center">School Admission Form</h1>
+    <div class="responsive-form">
+        <form action="post" id="Form-data">
+            <fieldset>
+<table>
+    <tr>
+        <td><label for="formno">Form No:</label></td>
+        <td><input type="text" id="formno"></td>
+    </tr>
+    <tr>
+        <td><label for="username">First Name</label></td>
+        <td><input type="text" maxlength="30" pattern="[A-Za-z]+" title="Only characters (letters) are allowed"
+            placeholder="Your first name"></td>
+    </tr>
+    <tr>
+        <td><label for="Lname">Last Name</label></td>
+        <td><input type="text" maxlength="30" pattern="[A-Za-z]+" title="Only characters (letters) are allowed"
+                    placeholder="Your Last name"></td>
+    </tr>
+    <tr>
+        <td><label for="Date">Date of Birth</label></td>
+        <td><input type="date"></td>
+    </tr>
+    <tr>
+        <td><label for="email">Email ID</label></td>
+        <td><input type="email" placeholder="Enter your valid Email"></td>
+    </tr>
+    <tr>
+        <td><label for="Number">Mobile Number</label></td>
+        <td><input type="number" maxlength="11" placeholder="Your Phone Number"> </td>
+    </tr>
+    <tr>
+        <td><label for="Gender">Gender</label></td>
+        <td><label for="male">Male</label></td> 
+    </tr>
+    <tr>
+        <td><label for="Female">Female</label></td>
+        <td><input type="radio" name="female"><br><br></td>
+    </tr>
+    <tr>
+        <td><label for="others">Others</label></td>
+        <td><input type="text" name="others"></td>
+    </tr>
+    <tr>
+                <td><label for="address">Type your Address</label></td>
+                <td><textarea placeholder="your Address"></textarea></td>
+
+    <tr>
+                <td><label for="City">City</label></td>
+                <td><input type="text"><br><br></td>
+                <td><label for="Pin">Pin Code</label></td>
+                <td><input type="number" maxlength="6"></td>
+    </tr>
+    <tr>
+                <td><label>State</label></td>
+                <td><input type="text"><br><br></td>
+                <td><label>Country</label></td>
+    </tr>
+    <tr>
+                <td><select>
+                    <option>Pakistan</option>
+                    <option>Russia</option>
+                    <option>USA</option>
+                    <option>CHINA</option>
+                    <option>JAPAN</option>
+                </select></td>
+    </tr>
+    <tr>
+                <td><label for="Hobbies">Hobbies</label></td>
+                <td><label for="button">Drawing</label></td>
+                <td><input type="button"></td>
+                <td><label for="button">Shoping</label></td>
+                <td><input type="button"></td>
+                <td><label for="button">Sketching</label></td>
+                <td><input type="button"></td>
+                <td><label for="others">Others</label></td>
+                <td><input type="text"></td>
+            </tr>
+        </table>
+        <table style="width:40%">
+            <tr>
+                <td>Qualification</td>
+                        <td>
+                            <table>
+                                <tr>
+                                    <th>Sl.No.</th>
+                                    <th>Examination</th>
+                                    <th>Board</th>
+                                    <th>Percentage</th>
+                                    <th>Year of Passing</th>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Class X</td>
+                                    <td><input type="text"></td>
+                                    <td><input type="text"></td>
+                                    <td><input type="text"></td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Class XII</td>
+                                    <td><input type="text"></td>
+                                    <td><input type="text"></td>
+                                    <td><input type="text"></td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Graduation</td>
+                                    <td><input type="text"></td>
+                                    <td><input type="text"></td>
+                                    <td><input type="text"></td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>Masters</td>
+                                    <td><input type="text"></td>
+                                    <td><input type="text"></td>
+                                    <td><input type="text"></td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table><br><br>
+                <label>Course Applied For</label>
+                <label for="button">BCA</label>
+                <input type="button">
+                <label for="button">B.Com</label>
+                <input type="button">
+                <label for="button">B.Sc</label>
+                <input type="button">
+                <label for="button">B.A</label>
+                <input type="button"><br><br>
+                <label for="Submit"></label>
+                <input type="submit">
+                <label for="reset"></label>
+                <input type="reset">
+            </fieldset>
+
+        </form>
+    </div>
+</body>
+
+</html>
